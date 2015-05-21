@@ -8,24 +8,41 @@
 %%% 
 %
 
+% FIXME Todo texto que não esteja em português tem que ser destacado em itálico, coloque
+% no comando \emph{World Wide Web} por exemplo.
 \subsection{Hypertext Markup Language (HTML)}
-A World Wide Web’s sempre teve como linguagem de marcação o HTML. O HTML foi inicialmente desenvolvido para suprir a necessidade de descrever sematicamente documentos acadêmicos, porem, ao passar dos anos ele sofreu significativas adaptações e melhorias para suportar diversos tipos de documentos.
+% FIXME Tente explicar um pouco o que é uma linguagem de marcação, talvez compará-la com linguagens de programação para exemplificar.
+A World Wide Web sempre teve como linguagem de marcação o HTML. O HTML foi inicialmente desenvolvido para suprir a necessidade de descrever sematicamente documentos acadêmicos, porem, ao passar dos anos ele sofreu significativas adaptações e melhorias para suportar diversos tipos de documentos.
 
-
+% FIXME Abreviaturas sempre um caixa alta: HTML
+% FIXME: Tente evitar itens dessa forma, tente colocar cada um explicado em parágrafos, formando uma linha de raciocínio coerente.
 O Html fornece ao autor  a possibilidade de:
-
-
 \begin{itemize}
 \setlength{\itemsep}{-0.3ex}
 \item Publicar documentos online com títulos,texto,tabelas e etc.
 \item Criar formulários customizados, para uso remoto, possibilitando assim a sua utilização para buscar informações, comprar produtos realizar reservas e etc.
-\item Adicionar video clips,sons e outras aplicações diretamente no documento.
+\item Adicionar vídeo clips, sons e outras aplicações diretamente no documento.
 \end{itemize}
+
+% FIXME Quando for trecho de código destaque com \texttt, ex: \texttt{<h1>}
+% FIXME Novamente, tags tem que estar no \emph{}
 HTML utiliza tags como <h1>  para estruturar o texto em títulos, parágrafos, listas, blocos, imagens, links para outros documentos, etc.
 A seguir, um exemplo de um arquivo em html e a página que é gerada a partir deste arquivo:
-\includegraphics{img/imagem1-tcc}
-\includegraphics{img/imagem2-tcc}
 
+\begin{figure}[!h!t!b]
+\centering
+\includegraphics[width=7.5cm]{img/imagem1-tcc}
+\caption{FIXME Legenda da figura, é obrigatório.}
+\end{figure}
+
+\begin{figure}[!h!t!b]
+\centering
+\includegraphics[width=7.5cm]{img/imagem2-tcc}
+\caption{FIXME Legenda}
+\end{figure}
+
+% FIXME Você praticamente só mostrou exemplos, onde está a explicação das figuras que colocou?
+% Esta seção pode ser muito complementada com mais informações e citando referências.
 
 %%
 %%%%
@@ -33,6 +50,7 @@ A seguir, um exemplo de um arquivo em html e a página que é gerada a partir dest
 \subsection{Javascript}
 Javascpript é uma linguagem de programação interpretada com suporte a orientação a objetos, ela oferece recursos interativos que completam o HTML permitindo a criação de páginas iterativas e dinâmicas, que podem ser interpretadas localmente, sem necessitar de uma execução remota de programas no serviodor.
 O javascript fornece ao autor a possibilidade de:
+
 \begin{itemize}
 \setlength{\itemsep}{-0.3ex}
 \item Realizar validações de informações em formulários HTML.
@@ -47,18 +65,31 @@ Muitas vezes  javascprit  é confundido com a linguagem de programação java, apes
 %%
 %%%%
 %%%%%%
-\subsection{Phatomjs}
+\subsection{PhantomJS}
 Phatomjs é um navegador opensource webkit, programável em javascript que possui suporte para diversos padrões web como: manipulação da DOM,  seletores CSS, JSON, Canvas e SVG.
 Com o phatomjs se é possivel:
+
 \begin{itemize}
 \setlength{\itemsep}{-0.3ex}
 \item Realizar testes unitários para aplicações web.
 \item Carregar, analisar e renderizar páginas web.
 \item Obter screenshots de websites.
 \end{itemize}
+
 A seguir um exemplo de código em javascript que ao ser executado pelo phatomjs gera um screenshot do website  http: //phantomjs.org/
-\includegraphics{example}
-\includegraphics{img/imagem3-tcc}
+
+\begin{figure}[!h!t!b]
+\centering
+\includegraphics[width=7.5cm]{img/example}
+\caption{FIXME Legenda}
+\end{figure}
+
+\begin{figure}[!h!t!b]
+\centering
+\includegraphics[width=7.5cm]{img/imagem3-tcc}
+\caption{FIXME Legenda}
+\end{figure}
+
 
 %
 %
@@ -67,6 +98,7 @@ A seguir um exemplo de código em javascript que ao ser executado pelo phatomjs g
 \subsection{Java}
 A linguagem de programação java  começou a ser desenvolvida em 1991 com a finalidade de ser utilizada em dispositivos eletrônicos inteligentes, porem com  o crescimento exponencial da World Wide Web em 1993, os engenheiros da Sun Microsystems notaram o potencial da linguagem para aprimorar a funcionalidade de servidores web e a adaptou para estas funções.
 A seguir algumas vantagens da linguagem de programação java:
+
 \begin{itemize}
 \setlength{\itemsep}{-0.3ex}
 \item Possui milhares de bibliotecas já implementadas para diversas funcionalidades, tais bibliotecas poupam significativamente o trabalho do desenvolvedor.
@@ -77,10 +109,11 @@ A seguir algumas vantagens da linguagem de programação java:
 %%
 %%%%
 %%%%%%
-\subsection{MySql}
+\subsection{MySQL}
 SGBD ou sistema gerenciador de banco de dados, é um conjunto de programas que tem como objetivo armazenar,alterar e apagar informações de uma base de dados. Estes são bastante uteis em aplicações web, por permitirem que as informações sejam armazenadas e utilizadas automaticamente.
 O MySQL é um popular SGBD openSource, que se destaca perante as outras opções no mercado por possuir um excelente desempenho.
 O MySQL também possui as seguintes vantagens:
+
 \begin{itemize}
 \setlength{\itemsep}{-0.3ex}
 \item Portabilidade.
@@ -105,4 +138,4 @@ Hibernate é um framework ORM (mapeamento objeto relacional) openSource lider de 
 %%
 %%%%
 %%%%%
-\subsection{Vraptor}
+\subsection{VRaptor}
