@@ -10,59 +10,67 @@
 
 
 \subsection{Hypertext Markup Language (HTML)}
-% FIXME Tente explicar um pouco o que é uma linguagem de marcação, talvez compará-la com linguagens de programação para exemplificar.
-Liguagem de marcação é um conjunto de \emph{tags} e regras que ao ser aplicados em um arquivo texto provem informações sobre o documento, tais informações podem ser por exemplo de como o documento deve ser editado, formatado, exibido e impresso. 
+Linguagem de marcação é um conjunto de \emph{tags}(palavras reservadas da linguagem) e regras que ao ser aplicados em um arquivo texto provem informações sobre o documento, tais informações podem ser por exemplo, de como o documento deve ser editado, formatado, exibido e impresso.
 
 
-A \emph{World Wide Web} sempre teve como linguagem de marcação o HTML. O HTML foi inicialmente desenvolvido para suprir a necessidade de descrever sematicamente documentos acadêmicos, porem, ao passar dos anos ele sofreu significativas adaptações e melhorias para suportar diversos tipos de documentos.
+A \emph{World Wide Web} sempre teve como linguagem de marcação o HTML. O HTML foi inicialmente desenvolvido para suprir a necessidade de descrever semanticamente documentos acadêmicos, porem, ao passar dos anos ele sofreu significativas adaptações e melhorias para suportar diversos novos tipos de documentos.
 
+Em HTML as \emph{tags} normalmente devem vir em duplas, onde a primeira indica o inicio do texto que sera modificado e a última o fim, como por exemplo:
 
-Entre as vantagens do html podemos destacar
-% FIXME: Tente evitar itens dessa forma, tente colocar cada um explicado em parágrafos, formando uma linha de raciocínio coerente.
-O HTML fornece ao autor  a possibilidade de:
-\begin{itemize}
-\setlength{\itemsep}{-0.3ex}
-\item Publicar documentos online com títulos,texto,tabelas e etc.
-\item Criar formulários customizados, para uso remoto, possibilitando assim a sua utilização para buscar informações, comprar produtos realizar reservas e etc.
-\item Adicionar vídeo clips, sons e outras aplicações diretamente no documento.
-\end{itemize}
+ \texttt{<title>} Olá mundo \texttt{</title>}
 
-HTML utiliza \emph{tags} como \texttt{<h1>}  para estruturar o texto em títulos, parágrafos, listas, blocos, imagens, links para outros documentos, etc.
-A seguir, um exemplo de um arquivo em html e a página que é gerada a partir deste arquivo:
+Ao executar este trecho de código, o navegador ira interpretar que o título da página deve ser "Olá mundo". 
+
+A figura 1, mostra um exemplo de um código em HTML, este é dividido em 2 partes principais, \emph{head}(cabeçalho) e \emph{body}(corpo)
+o título do documento juntamente com demais informações sobre o mesmo ficam dentro da \emph{tag} \texttt{<head>}.Dentro da \emph{tag} \texttt{<body>} se encontra o conteúdo do documento. Já as \emph{tags} \texttt{<h1>},\texttt{<h2>},\texttt{<h3>} representam tópicos no documento, onde \texttt{<h1>} é um elemento mais importante que \texttt{<h2>} e que \texttt{<h3>}. Navegadores normalmente renderizam os tópicos mais importantes com fontes maiores do que tópicos menos importantes (cit1).
+
+  
+
 
 \begin{figure}[!h!t!b]
 \centering
 \includegraphics[width=7.5cm]{img/imagem1-tcc}
-\caption{figura 1: exemplo de documento em html}
+\caption{Exemplo de documento em html}
 \end{figure}
+
+
+A figura 2, apresenta a interpretação do código anterior pelo navegador \emph{Google Chrome}
+
 
 \begin{figure}[!h!t!b]
 \centering
-\includegraphics[width=7.5cm]{img/imagem2-tcc}
-\caption{figura 2: Interpretação de código HTML pelo browser Google Chrome.}
+\includegraphics[width=7.5cm]{img/imagem4-tcc}
+\caption{Interpretação de código HTML pelo browser Google Chrome.}
 \end{figure}
-
-% FIXME Você praticamente só mostrou exemplos, onde está a explicação das figuras que colocou?
-% Esta seção pode ser muito complementada com mais informações e citando referências.
 
 %%
 %%%%
 %%%%%%
 \subsection{Javascript}
-Javascpript é uma linguagem de programação interpretada com suporte a orientação a objetos, ela oferece recursos interativos que completam o HTML permitindo a criação de páginas iterativas e dinâmicas, que podem ser interpretadas localmente, sem necessitar de uma execução remota de programas no serviodor.
-O javascript fornece ao autor a possibilidade de:
-
-\begin{itemize}
-\setlength{\itemsep}{-0.3ex}
-\item Realizar validações de informações em formulários HTML.
-\item Gerar documentos com aparências definidas a partir de informações vindas do backend ou do navegador do usuário.
-\item Interagir com o conteúdo do documento, alterando propriedades da página, dos elementos HTML e tratando toda a página como uma estrutura de objetos.
-\end{itemize}
+Linguagem de \emph{scpript}(roteiro) é uma linguagem de programação usada para manipular customizar e otimizar recursos já 
+existentes em um programa. Em tais sistemas, funcionalidades úteis já são disponíveis através de uma interface para o usuário,
+a linguagem de script é um mecanismo para expor tal funcionalidade para o controle da aplicação.(2 ecm doc)
 
 
-Muitas vezes  javascprit  é confundido com a linguagem de programação java, apesar dos nomes semelhantes, as duas linguagens são extremamente diferentes, enquanto o javascript possui uma boa capacidade de controlar comportamentos do browser e conteúdo, o java trabalha bem no backend com networking e  multithreading. 
+Na programação orientada a objetos implementa-se um conjunto de classes que definem os objetos presentes na aplicação, cada classe determina o comportamento(definido no métodos) e estados possíveis(atributos) de seus objetos, assim como o relacionamento com outros objetos.
 
 
+Javascript é uma linguagem de \emph{script} com suporte a orientação a objetos, quando utilizada como \emph{client-side}(lado do cliente) permite que conteúdo executável seja adicionado a páginas \emph{web},o que possibilita que estas interajam com o usuário, controlem o navegador e criem conteúdo HTML dinamicamente.
+
+
+A figura 3, apresenta um documento em html que possui um trecho de código em Javascript, note que este trecho se encontra dentro da \emph{tag} \texttt{<script>}, esta informa ao navegador que o trecho a seguir trata-se de um código em Javascript.
+Na linha 11 do código apresentado, podemos observar a chamada da função \emph{write} do objeto \emph{document}, esta função tem como objetivo adicionar texto a página que será exibida pelo navegador.
+
+\begin{figure}[!h!t!b]
+\centering
+\includegraphics[width=7.5cm]{img/imagem5-tcc}
+\caption{Código em HTML com trecho em Javascript}
+\end{figure}
+
+
+
+
+%
 %%
 %%%%
 %%%%%%
