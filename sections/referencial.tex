@@ -75,8 +75,8 @@ Na linha 11 do código apresentado, podemos observar a chamada da função \emph{wr
 %%%%
 %%%%%%
 \subsection{PhantomJS}
-Phatomjs é um navegador opensource webkit, programável em javascript que possui suporte para diversos padrões web como: manipulação da DOM,  seletores CSS, JSON, Canvas e SVG.
-Com o phatomjs se é possivel:
+Phatomjs é um navegador \emph{opensource} \emph{webkit}, programável em Javascript que possui suporte para diversos padrões web como: manipulação da DOM,  seletores CSS, JSON, Canvas e SVG.
+Com o Phatomjs se é possível:
 
 \begin{itemize}
 \setlength{\itemsep}{-0.3ex}
@@ -85,18 +85,18 @@ Com o phatomjs se é possivel:
 \item Obter screenshots de websites.
 \end{itemize}
 
-A seguir um exemplo de código em javascript que ao ser executado pelo phatomjs gera um screenshot do website  http: //phantomjs.org/
+A seguir um exemplo de código em Javascript que ao ser executado pelo Phatomjs gera um screenshot do website  http: //phantomjs.org/
 
 \begin{figure}[!h!t!b]
 \centering
-\includegraphics[width=7.5cm]{img/example}
-\caption{FIXME Legenda}
+\includegraphics[width=7.5cm]{img/imagem2-tcc}
+\caption{exemplo de código em Javascrpit que sera executado pelo phatomjs}
 \end{figure}
 
 \begin{figure}[!h!t!b]
 \centering
-\includegraphics[width=7.5cm]{img/imagem3-tcc}
-\caption{FIXME Legenda}
+\includegraphics[width=7.5cm]{img/example}
+\caption{imagem gerada após a execução do código em Javascript}
 \end{figure}
 
 
@@ -105,46 +105,60 @@ A seguir um exemplo de código em javascript que ao ser executado pelo phatomjs g
 %
 %%%%%%%%%%
 \subsection{Java}
-A linguagem de programação java  começou a ser desenvolvida em 1991 com a finalidade de ser utilizada em dispositivos eletrônicos inteligentes, porem com  o crescimento exponencial da World Wide Web em 1993, os engenheiros da Sun Microsystems notaram o potencial da linguagem para aprimorar a funcionalidade de servidores web e a adaptou para estas funções.
-A seguir algumas vantagens da linguagem de programação java:
+A linguagem de programação Java  começou a ser desenvolvida em 1991 com a finalidade de ser utilizada em dispositivos eletrônicos inteligentes, porem com  o crescimento exponencial da \emph{World Wide Web} em 1993, os engenheiros da \emph{Sun Microsystems} notaram o potencial da linguagem para aprimorar a funcionalidade de servidores \emph{web} e a adaptou para estas funções.
 
-\begin{itemize}
-\setlength{\itemsep}{-0.3ex}
-\item Possui milhares de bibliotecas já implementadas para diversas funcionalidades, tais bibliotecas poupam significativamente o trabalho do desenvolvedor.
-\item A tecnologia java oferece uma plataforma de desenvolvimento orientada a objetos limpa e eficiente.
-\item É uma linguagem simples, fácil de aprender e que não exige um conhecimento muito grande do desenvolvedor para se ter produtividade.
-\end{itemize}
+A linguagem Java é orientada a objetos e possui o diferencial de ser interpretada, ou seja, diferentemente de linguagens como c e c++ em que seus códigos são diretamente transformados em códigos de maquinas quando compiladas, o java possui seu código transformado em uma linguagem intermediaria, esta é então interpretada em tempo de execução por um programa chamado \emph{Java Virtual Machine}.Como resultado, Java pode muitas vezes atingir um nível de eficiência que é inatingível com intérpretes tradicionais.
+
+
+As características principais do Java incluem o fato dela ser fácil de ser programada sem a necessidade de treinamento extensivo do desenvolvedor. Em Java estes desenvolvedores tem acesso a diversas bibliotecas que oferecem uma série de  recursos já implementados tais como operações de entrada e saída, \emph{interface} para redes e recursos gráficos. Por ser uma linguagem interpretada,  uma outra vantagem é o fato dela possuir uma verificação de erros em tempo de execução.
+%colocar citação a este livro http://www.pdfiles.com/pdf/files/English/Desktop_Apps_Programming/The_Art_And_Science_Of_Java.pdf %
+
 
 %%
 %%%%
 %%%%%%
 \subsection{MySQL}
-SGBD ou sistema gerenciador de banco de dados, é um conjunto de programas que tem como objetivo armazenar,alterar e apagar informações de uma base de dados. Estes são bastante uteis em aplicações web, por permitirem que as informações sejam armazenadas e utilizadas automaticamente.
-O MySQL é um popular SGBD openSource, que se destaca perante as outras opções no mercado por possuir um excelente desempenho.
-O MySQL também possui as seguintes vantagens:
+SGBD ou (sistema gerenciador de banco de dados), é um conjunto de programas que tem como objetivo armazenar, alterar, apagar e proteger informações de uma base de dados. Estes são bastante uteis em aplicações web, por permitirem que as informações sejam armazenadas e utilizadas automaticamente.
 
-\begin{itemize}
-\setlength{\itemsep}{-0.3ex}
-\item Portabilidade.
-\item Utiliza a linguagem SQL.
-\item Compatibilidade com diversas linguagens de programação.
-\item Estável e com excelente desempenho.
-\item Pouco exigente quanto aos recursos de  hardware.
-\item Fácil instalação e configuração
-\end{itemize}
+ 
+Banco de dados armazenam informações sobre objetos distintos, entidades, associações ou ate mesmo sobre o relacionamento entre estas entidades. Como por exemplo, um banco para vendas pode guardar informações sobre produtos, clientes e vendas. Neste caso produtos e clientes são entidades enquanto vendas é um relacionamento entre cliente e produto.
+%% http://www.oracle.com/br/products/mysql/overview/index.html
+%
+No modelo de dados relacional os dados são percebidos pelos usuários como tabelas, onde cada coluna armazena um tipo de dados que podem ser de diversos tipos diferentes como numéricos, reais, texto e etc. Cada linha desta tabela representa uma instância.
+
+
+Na figura 6: podemos ver como os dados são representados em um modelo relacional, a coluna ClienteID representa o identificador do cliente este número deve ser único, a segunda coluna representa o nome e a terceira o telefone celular de cada uma das linhas correspondentes.
+
+\begin{figure}[!h!t!b]
+\centering
+\includegraphics[width=7.5cm]{img/imagem7-tcc}
+\caption{Exemplo de uma tabela de uma banco de dados relacional.}
+\end{figure}
+
+
+O MySQL é um popular SGBD relacional \emph{openSource}, que se destaca dos demais concorrentes por uma série de motivos, dentre elas podemos ressaltar: seu tamanho e velocidade, o MySQL funciona bem ate mesmo nos hardwares mais modestos, a velocidade com que ele consegue recuperar informações foi fator fundamental para torna-lo o SGBD favorito em diversas organizações. Outro fator muito importante para sua aceitação é a sua fácil instalação que pode ser realizada sem grandes dificuldades e com pouca configuração 
+%%
+%Citação http://arwauniversity.org/arwaweb/components/com_booklibrary/ebooks/Oreilly.Learning.MySQL.Nov.2006.pdf
+%  
+
 
 
 %%
 %%%%
 %%%%%%
 \subsection{Hibernate}
-(Não esta pronto ainda .. estou tento um pouco de dificuldades para elaborar)
-Com o advento da World Wide Web, a demanda por aplicações que fazem o uso de  banco de dados relacionais cresceu significamente, é comum que essas aplicações façam acesso constante ao banco de dados para buscar,alterar e editar informações.
-Aplicações que fazem uso de uma linguagem orientada a objtos e possuem banco de dados relacional ..
-Hibernate é um framework ORM (mapeamento objeto relacional) openSource lider de mercado,
+Enquanto o paradigma relacional é um modelo extremamente comum em populares  banco de dados do mercado, a programação orientada a objetos também é extremamente comum em aplicações atuais, logo a combinação entre estas tecnologias de diferentes paradigmas se torna inevitável.  Enquanto o modelo relacional trata os dados como tabelas, o modelo orientado a objetos os representa como um conjunto de objetos, tamanha diferença em como os dados são representados geram uma série de problemas em aplicações que utilizam SGBDS relacionais e linguagens orientadas a objeto.
 
+
+Como uma alternativa para este problema, algumas ferramentas de mapeamento objeto/relacional(MOR) foram criadas, dentre essas destaca-se o Hibernate
+
+O Hibernate é um \emph{framework}(ferramenta) de alta performance para mapeamento objeto/relacional em java. Este \emph{framework} associa classes em java a tabelas do banco de dados. Ele também permite abstrair código sql em objetos java.
+Etre as diversas vantagens do Hibernate podemos ressaltar a facilidade em alterar formatados das tabelas, simplesmente alterando as classes java que as representam.
+
+%%
+%http://ieeexplore.ieee.org/xpls/icp.jsp?arnumber=5071809
 
 %%
 %%%%
 %%%%%
-\subsection{VRaptor}
+%\subsection{VRaptor}
