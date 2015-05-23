@@ -18,7 +18,7 @@ Document=sections\referencial.tex
 
 [Frame0_View0,0]
 TopLine=0
-Cursor=85
+Cursor=52
 
 [Frame1]
 Flags=0
@@ -54,7 +54,7 @@ Document=Monografia_IgorHorta.tex
 
 [Frame2_View0,0]
 TopLine=0
-Cursor=260
+Cursor=78
 
 [SessionInfo]
 FrameCount=3
