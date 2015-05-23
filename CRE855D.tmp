@@ -1,7 +1,7 @@
 \documentclass{ufla}
 \usepackage[portuges]{babel}
 \usepackage[allbordercolors={1 1 1}, bookmarks=true, bookmarksnumbered=true,
-		pdftitle={Uma ferramenta de e-commerce para elaboração e compra de computadores com hardware customizado},
+		pdftitle={Uma ferramenta de \emh{e-commerce} para elaboração e compra de computadores com \emph{hardware} customizado},
         pdfauthor={Igor Horta Corrêa},
         pdfsubject={Monografia},
         pdfkeywords={E-Commerce. Tecnologia da Informação. Extração de Dados. Mineração de Dados.}]{hyperref}
@@ -85,7 +85,7 @@ stringstyle=\color[rgb]{0.627,0.126,0.941}
 
 \pagestyle{empty}
 \dedic{
-O presente trabalho
+Dedico a
 }
 
 \thanks{
