@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1562
-NormalPos.bottom=616
+NormalPos.right=1279
+NormalPos.bottom=141
 Class=LaTeXView
 Document=sections\referencial.tex
 
 [Frame0_View0,0]
-TopLine=0
-Cursor=52
+TopLine=223
+Cursor=10696
 
 [Frame1]
 Flags=0
@@ -29,8 +29,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1562
-NormalPos.bottom=616
+NormalPos.right=1279
+NormalPos.bottom=141
 Class=LaTeXView
 Document=sections\introducao.tex
 
@@ -47,16 +47,16 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
-NormalPos.right=1562
-NormalPos.bottom=616
+NormalPos.right=1279
+NormalPos.bottom=141
 Class=LaTeXView
 Document=Monografia_IgorHorta.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=78
+TopLine=107
+Cursor=4274
 
 [SessionInfo]
 FrameCount=3
-ActiveFrame=2
+ActiveFrame=0
 
