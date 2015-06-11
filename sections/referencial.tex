@@ -52,23 +52,35 @@ A Figura~2 apresenta a interpretação deste exemplo pelo navegador \emph{Google C
 %%%%
 %%%%%%
 \subsection{Javascript}
-Segundo \cite{EcmaScript} linguagem de \emph{scpript}(roteiro) é uma linguagem de programação usada para manipular customizar e otimizar recursos já existentes em um programa. Em tais sistemas, funcionalidades úteis já são disponíveis através de uma interface para o usuário, a linguagem de script é um mecanismo para expor tal funcionalidade para o controle da aplicação.
+O \emph{Javascript} é uma linguagem de programação \emph{script} que é muito utilizada atualmente para criação de páginas da web dinâmicas. Também é muito utilizada para construção de aplicações web. Isso se deve ao fato de os navegadores modernos suportam por padrão o uso dessa linguagem pelos \emph{websites}.
+
+Segundo \cite{EcmaScript} linguagem de \emph{script} é uma linguagem de programação usada para manipular, customizar e otimizar recursos já existentes em um programa. Em tais sistemas, funcionalidades úteis já são disponibilizadas através de uma interface para o usuário. A linguagem de \emph{script} é um mecanismo para disponibilizar tais funcionalidades também para o controle da aplicação.
 
 
-Na programação orientada a objetos implementa-se um conjunto de classes que definem os objetos presentes na aplicação, cada classe determina o comportamento(definido no métodos) e estados possíveis(atributos) de seus objetos, assim como o relacionamento com outros objetos.
+De acordo com \cite{flanagan2002javascript}, Javascript é uma linguagem de \emph{script} com suporte a orientação a objetos. Na programação orientada a objetos implementa-se um conjunto de classes que definem os objetos presentes na aplicação. Cada classe determina o comportamento (definido nos métodos) e estados possíveis (atributos) de seus objetos, assim como o relacionamento com outros objetos.
 
 
-Javascript De acordo com \cite{flanagan2002javascript} é uma linguagem de \emph{script} com suporte a orientação a objetos, quando utilizada como \emph{client-side}(lado do cliente) permite que conteúdo executável seja adicionado a páginas \emph{web},o que possibilita que estas interajam com o usuário, controlem o navegador e criem conteúdo HTML dinamicamente.
+Quando utilizada no \emph{client-side} (lado do cliente), o Javascript permite que conteúdo executável seja adicionado às páginas \emph{web}, o que possibilita que estas páginas interajam com o usuário, controlem o navegador e criem conteúdo HTML dinamicamente.
 
-
-A figura 3, apresenta um documento em HTML que possui um trecho de código em Javascript, note que este trecho se encontra dentro da \emph{tag} \texttt{<script>}, esta informa ao navegador que o trecho a seguir trata-se de um código em Javascript.
-Na linha 11 do código apresentado, podemos observar a chamada da função \emph{write} do objeto \emph{document}, esta função tem como objetivo adicionar texto a página que será exibida pelo navegador.
 
 \begin{figure}[!h!t!b]
 \centering
-\includegraphics[width=7.5cm]{img/imagem5-tcc}
-\caption{Código em HTML com trecho em Javascript}
+\includegraphics[width=\columnwidth]{img/imagem5-tcc}
+\caption{Código em HTML com trecho em Javascript.}
 \end{figure}
+
+% TODO Lembrete, NUNCA pode se separar o sujeito do verbo com vírgula/ponto. Ex:
+% ERRADO: A Figura~3, apresenta...
+% CORRETO: A Figura~3 apresenta...
+% Figura é o sujeito, apresenta é o verbo.
+A Figura~3 apresenta um documento em HTML que possui um trecho de código em Javascript. Este trecho se encontra dentro da \emph{tag} \texttt{<script>}, isso indica ao navegador que este trecho trata-se de um código em Javascript.
+Na linha 11 pode-se observar a chamada da função \emph{write} do objeto \emph{document}. Esta função tem como objetivo adicionar dinamicamente um texto ou conteúdo qualquer à página que está sendo exibida pelo navegador.
+
+% TODO Complementar dizendo que Javascript é utilizado na maioria dos sites de e-commerce.
+% Citar o possível problema para extração de dados caso os sites de e-commerce insiram os preços dos produtos dinamicamente via Javascript.
+% Pode citar a monografia do Leandro e observar que o código que ele desenvolveu não dava suporte à extração dos preços que isso ocorria.
+% Cita que no presente trabalho este problema será tratado e forma de solucioná-lo serão propostas.
+% Outra coisa, diga que várias partes do sistema web que está sendo proposto serão feitas com Javascript.
 
 
 
@@ -78,32 +90,36 @@ Na linha 11 do código apresentado, podemos observar a chamada da função \emph{wr
 %%%%
 %%%%%%
 \subsection{PhantomJS}
-Phatomjs é um navegador \emph{opensource} \emph{webkit}, programável em Javascript que possui suporte para diversos padrões web como: manipulação da DOM,  seletores CSS, JSON, Canvas e SVG.
-Com o Phatomjs se é possível:
+O PhantomJS é um navegador de código aberto sem interface gráfica (\emph{headless}) que utiliza o motor \emph{webkit}. Códigos podem ser desenvolvidos em Javascript para que o PhantomJS os execute. Ele disponibiliza à estes códigos suporte para diversos padrões web, como manipulação da DOM,  seletores CSS, JSON, Canvas e SVG.
+Utilizando o PhantomJS é possível:
 
 \begin{itemize}
 \setlength{\itemsep}{-0.3ex}
 \item Realizar testes unitários para aplicações web.
 \item Carregar, analisar e renderizar páginas web.
-\item Obter screenshots de websites.
+\item Obter \emph{screenshots} de \emph{websites}.
 \end{itemize}
 
-O código apresentado na figura 4,  associa uma instância da classe webpage do PhantomJS a uma variável chamada page, a partir de então
-a função open é chamada, esta função faz uma requisição ao site passado como parâmetro, no caso 'http://phatomjs.org/',se a requisição for um sucesso uma cópia da imagem renderizada pelo navegador PhantomJS e criada.
+\begin{figure}[!h!t!b]
+\centering
+\includegraphics[width=\columnwidth]{img/imagem2-tcc}
+\caption{Exemplo de código em Javascrpit que pode ser executado pelo PhantomJS.}
+\label{fig:phantomjs:example}
+\end{figure}
+
+O código apresentado na Figura~\ref{fig:phantomjs:example} associa uma instância da classe \texttt{webpage} do PhantomJS à uma variável chamada \texttt{page}. Em seguida
+a função \texttt{open} é chamada. Esta função realiza uma requisição ao site fornecido como parâmetro, no caso ``http://phatomjs.org/''. Se a requisição for um sucesso, uma cópia da imagem renderizada pelo navegador PhantomJS é criada. A Figura~\ref{fig:phantomjs:screenshot} é a imagem gerada pela execução deste exemplo.
 
 \begin{figure}[!h!t!b]
 \centering
-\includegraphics[width=7.5cm]{img/imagem2-tcc}
-\caption{Exemplo de código em Javascrpit que sera executado pelo phatomjs}
+\includegraphics[width=8.5cm]{img/example}
+\caption{Imagem gerada após a execução do código Javascript pelo PhantomJS.}
+\label{fig:phantomjs:screenshot}
 \end{figure}
 
-A figura a seguir é a imagem gerada pelo código em Javascript
+% TODO Complemente citando que o PhantomJS será utilizado no seu trabalho para recuperação das páginas de e-commerce, interpretação e tratamento das mesmas de forma que você
+% possa extrair as informação de produtos que você precisa.
 
-\begin{figure}[!h!t!b]
-\centering
-\includegraphics[width=7.5cm]{img/example}
-\caption{Imagem gerada após a execução do código em Javascript}
-\end{figure}
 
 
 %
