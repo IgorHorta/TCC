@@ -90,32 +90,36 @@ Na linha 11 pode-se observar a chamada da função \emph{write} do objeto \emph{do
 %%%%
 %%%%%%
 \subsection{PhantomJS}
-Phatomjs é um navegador \emph{opensource} \emph{webkit}, programável em Javascript que possui suporte para diversos padrões web como: manipulação da DOM,  seletores CSS, JSON, Canvas e SVG.
-Com o Phatomjs se é possível:
+O PhantomJS é um navegador de código aberto sem interface gráfica (\emph{headless}) que utiliza o motor \emph{webkit}. Códigos podem ser desenvolvidos em Javascript para que o PhantomJS os execute. Ele disponibiliza à estes códigos suporte para diversos padrões web, como manipulação da DOM,  seletores CSS, JSON, Canvas e SVG.
+Utilizando o PhantomJS é possível:
 
 \begin{itemize}
 \setlength{\itemsep}{-0.3ex}
 \item Realizar testes unitários para aplicações web.
 \item Carregar, analisar e renderizar páginas web.
-\item Obter screenshots de websites.
+\item Obter \emph{screenshots} de \emph{websites}.
 \end{itemize}
 
-O código apresentado na figura 4,  associa uma instância da classe webpage do PhantomJS a uma variável chamada page, a partir de então
-a função open é chamada, esta função faz uma requisição ao site passado como parâmetro, no caso 'http://phatomjs.org/',se a requisição for um sucesso uma cópia da imagem renderizada pelo navegador PhantomJS e criada.
+\begin{figure}[!h!t!b]
+\centering
+\includegraphics[width=\columnwidth]{img/imagem2-tcc}
+\caption{Exemplo de código em Javascrpit que pode ser executado pelo PhantomJS.}
+\label{fig:phantomjs:example}
+\end{figure}
+
+O código apresentado na Figura~\ref{fig:phantomjs:example} associa uma instância da classe \texttt{webpage} do PhantomJS à uma variável chamada \texttt{page}. Em seguida
+a função \texttt{open} é chamada. Esta função realiza uma requisição ao site fornecido como parâmetro, no caso ``http://phatomjs.org/''. Se a requisição for um sucesso, uma cópia da imagem renderizada pelo navegador PhantomJS é criada. A Figura~\ref{fig:phantomjs:screenshot} é a imagem gerada pela execução deste exemplo.
 
 \begin{figure}[!h!t!b]
 \centering
-\includegraphics[width=7.5cm]{img/imagem2-tcc}
-\caption{Exemplo de código em Javascrpit que sera executado pelo phatomjs}
+\includegraphics[width=8.5cm]{img/example}
+\caption{Imagem gerada após a execução do código Javascript pelo PhantomJS.}
+\label{fig:phantomjs:screenshot}
 \end{figure}
 
-A figura a seguir é a imagem gerada pelo código em Javascript
+% TODO Complemente citando que o PhantomJS será utilizado no seu trabalho para recuperação das páginas de e-commerce, interpretação e tratamento das mesmas de forma que você
+% possa extrair as informação de produtos que você precisa.
 
-\begin{figure}[!h!t!b]
-\centering
-\includegraphics[width=7.5cm]{img/example}
-\caption{Imagem gerada após a execução do código em Javascript}
-\end{figure}
 
 
 %
