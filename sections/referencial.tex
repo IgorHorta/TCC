@@ -10,38 +10,43 @@
 
 
 \subsection{Hypertext Markup Language (HTML)}
-Linguagem de marcação é um conjunto de \emph{tags}(palavras reservadas da linguagem) e regras que ao ser aplicados em um arquivo texto provem informações sobre o documento, tais informações podem ser por exemplo, de como o documento deve ser editado, formatado, exibido e impresso.
+O \emph{Hypertext Markup Language} (HTML) é uma linguagem de marcação utilizada para descrever documentos da web (\emph{websites}). Linguagem de marcação é um conjunto de \emph{tags} (palavras reservadas da linguagem) e regras que ao serem aplicados em um arquivo de texto provêm informações sobre como o documento deve ser editado, formatado, exibido e impresso.
 
 
-A \emph{World Wide Web} sempre teve como linguagem de marcação o HTML. O HTML foi inicialmente desenvolvido para suprir a necessidade de descrever semanticamente documentos acadêmicos, porem, ao passar dos anos ele sofreu significativas adaptações e melhorias para suportar diversos novos tipos de documentos.
+A \emph{World Wide Web} sempre utilizou o HTML como linguagem de marcação. Inicialmente o HTML foi desenvolvido para suprir a necessidade de descrever semanticamente documentos acadêmicos. Entretanto ao passar dos anos este sofreu significativas adaptações e melhorias para suportar novos tipos de documentos.
 
-Em HTML as \emph{tags} normalmente devem vir em duplas, onde a primeira indica o inicio do texto que sera modificado e a última o fim, como por exemplo:
+Em HTML, as \emph{tags} normalmente são utilizadas em duplas, onde cada uma indica o início e fim do texto que está sendo demarcado, como por exemplo:
 
- \texttt{<title>} Olá mundo \texttt{</title>}
+\begin{center}
+ \texttt{<title>Olá mundo</title>}
+\end{center}
 
-Ao executar este trecho de código, o navegador ira interpretar que o título da página deve ser "Olá mundo". 
+Ao interpretar este trecho de HTML, o navegador do usuário que está acessando o documento irá entender que o título da página deve ser ``Olá mundo''.
 
-A figura 1, mostra um exemplo de um código em HTML, segundo \citeonline{w3c_html5} o HTML é dividido em 2 partes principais, \emph{head}(cabeçalho) e \emph{body}(corpo)
-o título do documento juntamente com demais informações sobre o mesmo ficam dentro da \emph{tag} \texttt{<head>}.Dentro da \emph{tag} \texttt{<body>} se encontra o conteúdo do documento. Já as \emph{tags} \texttt{<h1>},\texttt{<h2>},\texttt{<h3>} representam tópicos no documento, onde \texttt{<h1>} é um elemento mais importante que \texttt{<h2>} e que \texttt{<h3>}. Navegadores normalmente renderizam os tópicos mais importantes com fontes maiores do que tópicos menos importantes.
+A Figura~1 mostra um exemplo de um documento escrito em HTML. Segundo \citeonline{w3c_html5} o HTML é dividido em 2 partes principais, \emph{head} (cabeçalho) e \emph{body} (corpo).
+O título do documento juntamente com demais informações sobre o mesmo ficam dentro da \emph{tag} \texttt{<head>}. Dentro da \emph{tag} \texttt{<body>} se encontra o conteúdo (corpo) do documento. Já as \emph{tags} \texttt{<h1>}, \texttt{<h2>}, \texttt{<h3>} representam tópicos no documento, onde \texttt{<h1>} é um elemento mais importante que \texttt{<h2>} e que \texttt{<h3>}. Os navegadores normalmente exibem os tópicos mais importantes com fontes maiores do que tópicos menos importantes.
+A Figura~2 apresenta a interpretação deste exemplo pelo navegador \emph{Google Chrome}.
 
   
-
-
 \begin{figure}[!h!t!b]
 \centering
-\includegraphics[width=7.5cm]{img/imagem1-tcc}
-\caption{Exemplo de documento em HTML}
+\includegraphics[width=\columnwidth]{img/imagem1-tcc}
+\caption{Exemplo de documento em HTML.}
 \end{figure}
 
 
-A figura 2, apresenta a interpretação do código anterior pelo navegador \emph{Google Chrome}
-
-
 \begin{figure}[!h!t!b]
 \centering
-\includegraphics[width=7.5cm]{img/imagem4-tcc}
+\includegraphics[width=8cm]{img/imagem4-tcc}
 \caption{Interpretação de código HTML pelo browser Google Chrome.}
 \end{figure}
+
+% TODO Horta, seria interessante no final desta subseção que você explicasse que as páginas
+% das lojas de e-commerce são escritas em HTML e que para você extrair as informações de que precisa você precisar ler, interpretar e processar os códigos HTML
+% das lojas de e-commerce.
+% Seria bom complementar também dizendo que o sistema web que será desenvolvido apresentará as informações utilizando HTML também.
+
+
 
 %%
 %%%%
