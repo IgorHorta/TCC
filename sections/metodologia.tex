@@ -1,34 +1,34 @@
 \section{METODOLOGIA}
 \label{sec:metod}
 
-\subsection{Extra√ß√£o de dados sobre produtos}
+\subsection{ExtraÁ„o de dados sobre produtos}
 
-\cite{alonso2015agente} realizou um estudo sobre extra√ß√£o de pre√ßos em sites de \emph{e-commerce}. Neste trabalho foi desenvolvido um agente de \emph{Shopping Comparison} que utilizava padr√µes em documentos HTML para obter produtos e seus respectivos atributos.Por√©m este estudo possu√≠a o ponto deficiente de n√£o conseguir obter informa√ß√µes de \emph{websites} que utilizam a linguagem Javascript para exibir o pre√ßos dos produtos assincronamente, o que √© uma pr√°tica comum em sites atuais.
+\cite{alonso2015agente} realizou um estudo sobre extraÁ„o de preÁos em sites de \emph{e-commerce}. Neste trabalho foi desenvolvido um agente de \emph{Shopping Comparison} que utilizava padrıes em documentos HTML para obter produtos e seus respectivos atributos.PorÈm este estudo possuÌa o ponto deficiente de n„o conseguir obter informaÁıes de \emph{websites} que utilizam a linguagem Javascript para exibir o preÁos dos produtos assincronamente, o que È uma pr·tica comum em sites atuais.
 
-O presente trabalho tratar√° os pontos deficientes do estudo de \citeonline{alonso2015agente}, e tamb√©m abordara outras funcionalidades da aplica√ß√£o em si.
+O presente trabalho tratar· os pontos deficientes do estudo de \citeonline{alonso2015agente}, e tambÈm abordara outras funcionalidades da aplicaÁ„o em si.
 
-Um dos recursos do sistema proposto √© proporcionar a compara√ß√£o de pre√ßos de pe√ßas de computador entre diversas lojas de \emph{e-commerce}, para se obter a informa√ß√£o de cada pe√ßa com seus respectivos pre√ßos e vendedores o sistema utilizara de um algoritmo de extra√ß√£o de dados. Tal algoritmo sera desenvolvido em Javascript e ser√° executado utilizando o PhantomJS.
-Os dados que deveram ser extra√≠dos dos \emph{websites} voltados para o \emph{e-commerce} s√£o:
+Um dos recursos do sistema proposto È proporcionar a comparaÁ„o de preÁos de peÁas de computador entre diversas lojas de \emph{e-commerce}, para se obter a informaÁ„o de cada peÁa com seus respectivos preÁos e vendedores o sistema utilizara de um algoritmo de extraÁ„o de dados. Tal algoritmo sera desenvolvido em Javascript e ser· executado utilizando o PhantomJS.
+Os dados que deveram ser extraÌdos dos \emph{websites} voltados para o \emph{e-commerce} s„o:
 
 
 \begin{itemize}
 \setlength{\itemsep}{-0.3ex}
 \item nome do produto.
 \item link da imagem do produto.
-\item pre√ßo do produto.
-\item descri√ß√£o do produto.
+\item preÁo do produto.
+\item descriÁ„o do produto.
 \item link para a compra do produto.
 \end{itemize}
 
 
-As informa√ß√µes do produto como nome, \emph{link} da imagem, pre√ßo, \emph{link} para a compra ser√£o necess√°rias para identificar o produto, exibir sua imagem e manter informa√ß√µes sobre o vendedor.
+As informaÁıes do produto como nome, \emph{link} da imagem, preÁo, \emph{link} para a compra ser„o necess·rias para identificar o produto, exibir sua imagem e manter informaÁıes sobre o vendedor.
 
-Para se obter tais informa√ß√µes ser√° criado um \emph{script} que adotara a seguinte estrat√©gia: obter a √°rvore DOM do \emph{website} utilizando fun√ß√µes disponibilizadas pelo phatomJS e ai ent√£o utilizando a DOM juntamente com seletores CSS o algoritmo ira buscar pelo car√°cter \$ pois o mesmo denota pre√ßo, ao encontra-lo  analisara os elementos pr√≥ximos do mesmo n√≠vel em busca de uma imagem e nome do produto. Se tais elementos forem localizados, o algoritmo ent√£o conseguiu identificar um poss√≠vel produto.Para confirmar que o item obtido √© o que se procura, o algoritmo ira \"subir\" alguns n√≠veis na arvore DOM e ent√£o procurar nos elementos pr√≥ximos por itens semelhantes, se uma sequ√™ncia de produtos semelhantes forem encontrados, o algoritmo ent√£o ira armazenar estes itens em uma lista e os enviara para a aplica√ß√£o.
+Para se obter tais informaÁıes ser· criado um \emph{script} que adotara a seguinte estratÈgia: obter a ·rvore DOM do \emph{website} utilizando funÁıes disponibilizadas pelo phatomJS e ai ent„o utilizando a DOM juntamente com seletores CSS o algoritmo ira buscar pelo car·cter \$ pois o mesmo denota preÁo, ao encontra-lo  analisara os elementos prÛximos do mesmo nÌvel em busca de uma imagem e nome do produto. Se tais elementos forem localizados, o algoritmo ent„o conseguiu identificar um possÌvel produto.Para confirmar que o item obtido È o que se procura, o algoritmo ira \"subir\" alguns nÌveis na arvore DOM e ent„o procurar nos elementos prÛximos por itens semelhantes, se uma sequÍncia de produtos semelhantes forem encontrados, o algoritmo ent„o ira armazenar estes itens em uma lista e os enviara para a aplicaÁ„o.
 
 
-\subsection{Persist√™ncia dos dados}
+\subsection{PersistÍncia dos dados}
 
-O sistema proposto possuir√° 2 tabelas essenciais no banco de dados, sendo a primeira de lojas, que conter√° informa√ß√µes sobre as lojas de \emph{e-commerce}, a segunda tabela contar√° com informa√ß√µes sobre os produtos e ser√° preenchida com os dados obtidos por meio do algoritmo de extra√ß√£o de dados, tais dados ser√£o tratados e ter√£o sua integridade testada antes de serem salvos.
+O sistema proposto possuir· 2 tabelas essenciais no banco de dados, sendo a primeira de lojas, que conter· informaÁıes sobre as lojas de \emph{e-commerce}, a segunda tabela contar· com informaÁıes sobre os produtos e ser· preenchida com os dados obtidos por meio do algoritmo de extraÁ„o de dados, tais dados ser„o tratados e ter„o sua integridade testada antes de serem salvos.
 
 \begin{figure}[!h!t!b]
 \centering
@@ -44,16 +44,16 @@ O sistema proposto possuir√° 2 tabelas essenciais no banco de dados, sendo a pri
 \caption{Exemplo de uma tabela de produtos de um banco de dados.}
 \end{figure}
 
-A figura~7 representa uma tabela de lojas no banco de dados, tal tabela conter√° o nome,\emph{link} para o site da loja e id de cada empresa que ter√° seus dados extra√≠dos.
+A figura~7 representa uma tabela de lojas no banco de dados, tal tabela conter· o nome,\emph{link} para o site da loja e id de cada empresa que ter· seus dados extraÌdos.
 
-A figura~8 representa uma tabela de produtos no banco de dados, esta tabela ira conter informa√ß√µes como: id,nome,imagem,status,categoria,descri√ß√£o e um identificador que informara a qual loja este produto pertence.
-
-
-\subsection{Listagem de produtos com compara√ß√£o de pre√ßos}
-
-Com os dados extra√≠dos de diferentes lojas de \emph{e-commerce} voltadas para o com√©rcio de hardware, sera poss√≠vel a implementa√ß√£o de uma interface \emph{web} que auxilie ao usu√°rio na montagem do pr√≥prio computador personalizado. tal interface sera implementada utilizando-se as linguagens HTML,Javascript e CSS. 
+A figura~8 representa uma tabela de produtos no banco de dados, esta tabela ira conter informaÁıes como: id,nome,imagem,status,categoria,descriÁ„o e um identificador que informara a qual loja este produto pertence.
 
 
-Nela o usu√°rio ter√° acesso a diferentes tipos de pe√ßas de computadores o sistema destacara a pe√ßa mais barata de cada categoria e seu respectivo vendedor.
+\subsection{Listagem de produtos com comparaÁ„o de preÁos}
+
+Com os dados extraÌdos de diferentes lojas de \emph{e-commerce} voltadas para o comÈrcio de hardware, sera possÌvel a implementaÁ„o de uma interface \emph{web} que auxilie ao usu·rio na montagem do prÛprio computador personalizado. tal interface sera implementada utilizando-se as linguagens HTML,Javascript e CSS. 
+
+
+Nela o usu·rio ter· acesso a diferentes tipos de peÁas de computadores o sistema destacara a peÁa mais barata de cada categoria e seu respectivo vendedor.
 
 
