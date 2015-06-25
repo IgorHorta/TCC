@@ -41,10 +41,9 @@ A Figura~2 apresenta a interpretação deste exemplo pelo navegador \emph{Google C
 \caption{Interpretação de código HTML pelo browser Google Chrome.}
 \end{figure}
 
-% TODO Horta, seria interessante no final desta subseção que você explicasse que as páginas
-% das lojas de e-commerce são escritas em HTML e que para você extrair as informações de que precisa você precisar ler, interpretar e processar os códigos HTML
-% das lojas de e-commerce.
-% Seria bom complementar também dizendo que o sistema web que será desenvolvido apresentará as informações utilizando HTML também.
+Como o HTML é a linguagem utilizada para descrever documentos da \emph{web}, o algoritmo proposto neste trabalho precisará ser capaz de ler, interpretar e processar códigos em HTML para recuperar as informações necessárias.
+
+A aplicação proposta por este estudo para realizar a comparação de preços de diferentes lojas de peças de computadores também apresentará informações utilizando o HTML.
 
 
 
@@ -69,20 +68,14 @@ Quando utilizada no \emph{client-side} (lado do cliente), o Javascript permite q
 \caption{Código em HTML com trecho em Javascript.}
 \end{figure}
 
-% TODO Lembrete, NUNCA pode se separar o sujeito do verbo com vírgula/ponto. Ex:
-% ERRADO: A Figura~3, apresenta...
-% CORRETO: A Figura~3 apresenta...
-% Figura é o sujeito, apresenta é o verbo.
+
 A Figura~3 apresenta um documento em HTML que possui um trecho de código em Javascript. Este trecho se encontra dentro da \emph{tag} \texttt{<script>}, isso indica ao navegador que este trecho trata-se de um código em Javascript.
 Na linha 11 pode-se observar a chamada da função \emph{write} do objeto \emph{document}. Esta função tem como objetivo adicionar dinamicamente um texto ou conteúdo qualquer à página que está sendo exibida pelo navegador.
 
-% TODO Complementar dizendo que Javascript é utilizado na maioria dos sites de e-commerce.
-% Citar o possível problema para extração de dados caso os sites de e-commerce insiram os preços dos produtos dinamicamente via Javascript.
-% Pode citar a monografia do Leandro e observar que o código que ele desenvolveu não dava suporte à extração dos preços que isso ocorria.
-% Cita que no presente trabalho este problema será tratado e forma de solucioná-lo serão propostas.
-% Outra coisa, diga que várias partes do sistema web que está sendo proposto serão feitas com Javascript.
 
-
+Devido aos diversos recursos da linguagem Javascript para promover dinamicidade a \emph{websites}, esta se tornou amplamente utilizada em diversos \emph{websites} modernos, inclusive em sites voltados para o \emph{e-commerce}.
+Como foi discutido no trabalho de \cite{alonso2015agente}, a atualização de preços de produtos dinamicamente via Javascript em lojas virtuais
+pode ser um problema para algoritmos de extração de dados. No presente trabalho este problema sera tratado e formas de soluciona-lo serão apresentadas.
 
 
 %
@@ -117,8 +110,11 @@ a função \texttt{open} é chamada. Esta função realiza uma requisição ao site for
 \label{fig:phantomjs:screenshot}
 \end{figure}
 
-% TODO Complemente citando que o PhantomJS será utilizado no seu trabalho para recuperação das páginas de e-commerce, interpretação e tratamento das mesmas de forma que você
-% possa extrair as informação de produtos que você precisa.
+
+
+
+
+O PhatomJS foi a ferramenta escolhida para executar o algoritmo de extração de dados que este estudo propõe, entre os diversos motivos desta escolha se destaca o fato da ferramenta oferecer total suporte a linguagem Javascript, linguagem na qual o algoritmo proposto será desenvolvido, outro motivo é o fato do PhatomJS possuir diversas bibliotecas extras que navegadores comuns não possuem.
 
 
 
@@ -127,17 +123,15 @@ a função \texttt{open} é chamada. Esta função realiza uma requisição ao site for
 %
 %%%%%%%%%%
 \subsection{Java}
-% TODO Essas afirmações tem referência?
-A linguagem de programação Java  começou a ser desenvolvida em 1991 com a finalidade de ser utilizada em dispositivos eletrônicos inteligentes. Entretanto com  o crescimento exponencial da \emph{World Wide Web} em 1993, os engenheiros da \emph{Sun Microsystems} notaram o potencial da linguagem para aprimorar a funcionalidade de servidores \emph{web} e a adaptou para este propósito.
+A linguagem de programação Java  começou a ser desenvolvida em 1991 com a finalidade de ser utilizada em dispositivos eletrônicos inteligentes. Entretanto com  o crescimento exponencial da \emph{World Wide Web} em 1993, os engenheiros da \emph{Sun Microsystems} notaram o potencial da linguagem para aprimorar a funcionalidade de servidores \emph{web} e a adaptou para este propósito.\citeonline{deitel2006java}
 
-% TODO Essas afirmações tem referência?
-A linguagem Java é orientada a objetos e possui o diferencial de ser interpretada. Diferentemente de linguagens como C e C$++$, onde os códigos-fonte são diretamente transformados em códigos de maquina quando compilados, o compilador Java transforma o código-fonte em uma linguagem intermediária. Esta é então interpretada em tempo de execução por uma máquina virtual (programa denominado \emph{Java Virtual Machine}). Como resultado, programas escritos em Java podem muitas vezes atingir um nível de eficiência que é inatingível com outras linguagens puramente interpretadas tradicionais.
+A linguagem Java é orientada a objetos e possui o diferencial de ser interpretada. Diferentemente de linguagens como C e C$++$, onde os códigos-fonte são diretamente transformados em códigos de maquina quando compilados, o compilador Java transforma o código-fonte em uma linguagem intermediária. Esta é então interpretada em tempo de execução por uma máquina virtual (programa denominado \emph{Java Virtual Machine}). Como resultado, programas escritos em Java podem muitas vezes atingir um nível de eficiência que é inatingível com outras linguagens puramente interpretadas tradicionais.\citeonline{roberts2013art}
 
 
 Segundo \citeonline{roberts2013art} as características principais do Java incluem o fato dela ser fácil de ser utilizada, sem a necessidade de treinamento extensivo do desenvolvedor. Em Java estes desenvolvedores têm acesso à diversas bibliotecas que oferecem uma série de  recursos já implementados, tais como operações de entrada e saída, interfaces para redes e recursos gráficos. Por ser uma linguagem interpretada,  uma outra vantagem é o fato dela possuir uma verificação de erros em tempo de execução muito mais robusta do que linguagens não interpretadas (como C e C$++$).
 
-% TODO Complementar citando que o Java será a linguagem escolhida para implementação do backend do sistema proposto.
 
+Devido as características citadas acima, nossa aplicação terá o \emph{backend}(parte do sistema que é executado por um servidor) implementada em Java
 
 
 %%
