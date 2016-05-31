@@ -18,7 +18,7 @@ function extract(url,extractFunction){
                     return JSON.stringify(products);
                 },extractFunction);
 				
-                fs.write('produtos/waz/placaMae2.json', json, 'w');
+                fs.write('produtos/balaoDaInformatica/ssd.json', json, 'w');
                 phantom.exit(0);
 
             });

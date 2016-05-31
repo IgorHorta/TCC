@@ -1,0 +1,36 @@
+[
+  {
+    "category": "ssd",
+    "title": "SSD Kingston V300 Series Standalone (SV300S37A/120G) Capacidade de 120GB  450MB/s  Formato: 2.5  (mtspc) (oftpr) Kingston",
+    "link": "http://www.balaodainformatica.com.br/Produto/50252/SSD-Kingston-V300-Series-Standalone-SV300S37A_120G-Capacidade-de-120GB-450MB_s-Formato-25-mtspc-oftpr",
+    "img": "http://www.balaodainformatica.com.br/images/imagem3/KING-SV300S37A-120G.jpg",
+    "price": "R$ 209,90"
+  },
+  {
+    "category": "ssd",
+    "title": "SSD Kingston SV300S37A/480G V300 Capacidade: 480GB   2.5 Polegadas  Sata III Blister Kingston",
+    "link": "http://www.balaodainformatica.com.br/Produto/68096/SSD-Kingston-SV300S37A_480G-V300-Capacidade-480GB--25-Polegadas-Sata-III-Blister",
+    "price": "R$ 669,00"
+  },
+  {
+    "category": "ssd",
+    "title": "SSD Kingston V300 Series Standalone (SV300S37A/240G) Capacidade de 240GB  Formato 2.5  450MB (descontossd) (oftpr) Kingston",
+    "link": "http://www.balaodainformatica.com.br/Produto/56511/SSD-Kingston-V300-Series-Standalone-SV300S37A_240G-Capacidade-de-240GB-Formato-25-450MB-descontossd-oftpr",
+    "img": "http://www.balaodainformatica.com.br/images/imagem3/SV300S37A-240G.jpg",
+    "price": "R$ 369,00"
+  },
+  {
+    "category": "ssd",
+    "title": "SSD Sandisk 240GB (SDSSDA-240G-G25) Capacidade: 240GB  Leituras: 520MB/s  Gravações: 350MB/s  Leitura seq. (até): 520 MB/s  Gravação seq. (até): 350 MB/s  Sandisk",
+    "link": "http://www.balaodainformatica.com.br/Produto/91404/SSD-Sandisk-240GB-SDSSDA-240G-G25-Capacidade-240GB-Leituras-520MB_s-Gravacoes-350MB_s-Leitura-seq-ate-520-MB_s-Gravacao-seq-ate-350-MB_s-",
+    "img": "http://www.balaodainformatica.com.br/images/imagem3/SDSSDA-240G-G25.jpg",
+    "price": "R$ 369,90"
+  },
+  {
+    "category": "ssd",
+    "title": "Unidade SSD 120GB Kingston HyperX Fury SHFS37A/120G SATA 3 6Gb/s  Formato 2.5 Polegadas  Transferência 500MB/s Kingston",
+    "link": "http://www.balaodainformatica.com.br/Produto/69873/Unidade-SSD-120GB-Kingston-HyperX-Fury-SHFS37A_120G-SATA-3-6Gb_s-Formato-25-Polegadas-Transferencia-500MB_s",
+    "img": "http://www.balaodainformatica.com.br/images/imagem3/SHFS37A-120G.jpg",
+    "price": "R$ 407,74"
+  }
+]
